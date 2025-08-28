@@ -54,8 +54,6 @@ for (let i = 0; i < allCallButtons.length; i++) {
             time: new Date().toLocaleTimeString('en-BD')
         };
 
-
-        
         const historyContainer = document.getElementById("history");
         console.log(historyContainer);
         const newHistoryItem = document.createElement("div");
@@ -71,3 +69,10 @@ for (let i = 0; i < allCallButtons.length; i++) {
         historyContainer.prepend(newHistoryItem);
     });
 }
+
+
+document.getElementById("historyClrButton").addEventListener("click", function () {
+    const historyContainer = document.getElementById("history");
+    historyContainer.innerHTML = ``;
+    document.getElementById("noHistory").style.display = "block";
+})
