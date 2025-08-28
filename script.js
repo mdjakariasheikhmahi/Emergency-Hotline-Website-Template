@@ -70,7 +70,6 @@ for (let i = 0; i < allCallButtons.length; i++) {
     });
 }
 
-
 document.getElementById("historyClrButton").addEventListener("click", function () {
     const historyContainer = document.getElementById("history");
     historyContainer.innerHTML = ``;
